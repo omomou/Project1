@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+/* setting the image of the background */
+
+body {
+    min-height: 100vh;
+    background-color: #FFFDD0;
+    background: url('GRedit.jpg') no-repeat;
+    background-size: cover;                 
+    background-position: center;
+}
+
+/* creating a padding around the content for the nav, setting the color, and making the nav bar horiziontal */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #F8F8FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* setting the GR86 class */
+
+.GR86 {
+    font-size: 32px;
+    color: #778899;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* styling the font */ 
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+/* styling the hover element and setting a line under the nav links with a transition of the line*/
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2%;
+    background: #778899;
+    transition: .3s;
+}
+
+/* moving of the line under the nav links*/
+.navbar a:hover::before{
+    width: 100%;
+
+}

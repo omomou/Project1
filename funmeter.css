@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+
+/* setting the GR86 class */
+
+.GR86 {
+    font-size: 32px;
+    color: #778899;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* styling the font */ 
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+/* styling the hover element and setting a line under the nav links with a transition of the line*/
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2%;
+    background: #778899;
+    transition: .3s;
+}
+
+.Speed {
+    color: #fff;
+}
